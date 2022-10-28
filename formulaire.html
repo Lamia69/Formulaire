@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Formulaire</title>
+</head>
+
+
+
+<body>
+    <h1> Formulaire d'inscription </h1>
+
+    <br>
+    <p>
+    <h2> Pourquoi nous rejoindre ? </h2>
+    En forme. En meilleure forme. En forme parfaite.
+    Nous sommes toujours plus nombreux à trouver important de nous sentir bien dans notre peau. Faire du sport aide à
+    être en forme et à le rester.
+    Devenez vous aussi une meilleure version de vous-même. </p> <br>
+
+    <p>
+    <h2> A propos de vous </h2>
+
+    <div class="vous">
+            <form method="post" action="asset/programmation/rpocess_form.php"></form>
+            </p>
+            <p><br> Nom: <input type=" text" name="nom" placeholder="Veuillez rentrer votre nom" size="25"> </input></p>
+            <br><br>
+            Prénom: <input type=" text" name="prénom" placeholder="Veuillez rentrer votre prénom" size="25"></input>
+            <br><br>
+    </div>
+
+    <p>
+    <div class=" date">
+        <label for="date"> Date d'anniversaire :</label>
+        <input type="date" name="date" id="date" /> </p>
+    </div>
+
+    <div class="contact">
+        <p>
+            <label for="email">Votre courriel :</label>
+            <input type="email" name="email" id="email" required />
+        </p>
+        <p><label for="tel"> Votre téléphone : </label>
+            <input type="tel" name="tel" id="tel">
+        </p>
+    </div>
+
+    <div class="gender">
+        <form>
+            <p>Veuillez définir votre identité de genre :</p>
+
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Masculin</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Féminin</label>
+            <br />
+            <br>
+            <input type="radio" name="gender" id="nb" value="nb" />
+            <label for="nb">Non-binaire</label>
+
+
+            <br />
+        </form>
+        </p>
+        </section>
+    </div>
+    </section>
+
+
+
+    <p>
+    <h2> Régime alimentaire </h2>
+    </p>
+
+    <fieldset>
+        <p>
+            <legend> Avez-vous des allergènes ? </legend> <br>
+
+            <input type="radio" name="wish" id="rich" value="rich">
+            <label for="rich"> OUI </label>
+            <label for="message"> Si oui, lesquel </label>
+            <textarea name="message" id="message"> si oui, lesquels </textarea>
+        </p>
+
+        <p> <input type="radio" name="wish" id="rich" value="rich">
+            <label for="rich"> NON </label>
+        </p>
+
+        <form>
+
+            <p> <br> Alimentation spécifique ? :</p>
+
+            <input type="radio" name="food" id="Vegan" value="Vegan" />
+            <label for="vegan"> Vegan </label>
+            <br />
+            <input type="radio" name="Vegetelien " id="Vegetelien " value="Vegetelien" />
+            <label for="Vegetelien ">Vegetelien </label>
+            <br />
+            <input type="radio" name="Flexitarien" id="nb" value="Flexitarien" />
+            <label for="Flexitarien">Flexitarien</label>
+            <input type="radio" name="Végetarienne" id="Végetarienne" value="Végetarienne" />
+            <label for="Végetarienne">Végetarienne</label>
+            <input type="radio" name="no" id="no" value="no" />
+            <label for="no">Aucune spécificité </label>
+
+            <br />
+        </form>
+
+    </fieldset>
+
+
+
+
+    <p> À quelle fréquence faite vous du sport ? </p>
+    <input type="number" id="number" min="0" max="7" step="1" placeholder="jamais">
+
+
+    </fieldset>
+
+
+
+
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="text" name="email" placeholder="Your Email" />
+        <textarea name="message"></textarea>
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="7e47613b-3d98-4add-8b83-88da28abd5f4">
+        <input type="hidden" name="subject" value="Contact us from - example.com" />
+        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+        <input type="submit" value="Submit" />
+    </form>
